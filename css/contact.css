@@ -1,0 +1,38 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}
+
+.contact-form {
+  padding: 20px;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

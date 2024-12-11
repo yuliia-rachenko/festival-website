@@ -1,0 +1,32 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}
+
+.event-list {
+  padding: 20px;
+}
+
+.event {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.event h2 {
+  color: #ff6347;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
