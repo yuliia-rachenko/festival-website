@@ -122,60 +122,124 @@ nav ul li a:hover {
   transform: scale(1.05); /* Slight zoom effect */
 }
 
-/* Styling for the participants section */
-.participants-list {
-  background: url("background-image.jpg") no-repeat center center fixed; /* Add a background image */
-  background-size: cover; /* Ensure background covers the full area */
-  padding: 50px 0; /* Adjust padding to reduce space around */
-  color: white; /* White text for better readability */
-  text-align: center; /* Center align the title */
+/* Headliners Section */
+.headliners-section {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark Gothic background */
+  padding: 60px 20px;
+  text-align: center;
+  color: gold;
 }
 
-.participants-list h2 {
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
-  color: #ffd700; /* Gold color for the title */
+/* Title Styling */
+.headliners-section h2 {
+  font-family: "UnifrakturMaguntia", cursive; /* Gothic font for title */
   font-size: 48px;
-  margin-bottom: 40px; /* Space below title */
+  color: gold;
+  margin-bottom: 50px;
 }
 
-/* Full-width container */
-.participants-container {
+/* Flexbox Layout for Headliners */
+.headliner-slide-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Allow items to wrap in case of smaller screen */
-  gap: 30px; /* Space between the logos */
-  width: 100%;
-  max-width: 1200px; /* Max width for the logos area */
-  margin: 0 auto; /* Center the content */
+  justify-content: center; /* Center the items horizontally */
+  gap: 40px; /* Space between items */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  max-width: 100%; /* Ensure container is full-width */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Individual Headliner Slide */
+.headliner-slide {
+  background: rgba(0, 0, 0, 0.8); /* Slight dark background */
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
-  border-radius: 10px; /* Rounded corners for a nice effect */
+  border-radius: 15px;
+  box-sizing: border-box; /* Ensure padding doesn't break layout */
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  max-width: 320px; /* Ensure a consistent width for cards */
+  width: 100%;
+  margin-bottom: 30px; /* Space between the rows on wrap */
 }
 
-/* Each participant logo */
-.participant {
-  width: 150px; /* Adjust width of the logos */
-  flex-grow: 1; /* Make the logos grow if there is more space */
-}
-
-.participant img {
-  width: 100%; /* Make image fit the participant div */
+/* Band Image */
+.headliner-slide img {
+  width: 250px; /* Adjust logo size */
   height: auto;
-  object-fit: contain; /* Ensure the logo doesn't get stretched */
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
-/* Responsive design: adjust for smaller screens */
+/* Band Name */
+.headliner-slide h3 {
+  font-family: "UnifrakturMaguntia", cursive; /* Gothic font for band name */
+  font-size: 36px;
+  color: gold;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for a Gothic effect */
+  margin-bottom: 15px;
+}
+
+/* Band Information */
+.band-info {
+  color: rgba(255, 255, 255, 0.8); /* Slightly transparent text */
+  font-family: "Garamond", serif; /* Elegant, old-style font */
+  text-align: center;
+  padding: 0 20px;
+}
+
+.band-info p {
+  margin-bottom: 10px;
+}
+
+.band-info strong {
+  font-size: 18px;
+  color: gold;
+  text-transform: uppercase;
+}
+
+/* Band Description */
+.band-description {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Cool Story Section */
+.cool-story {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .participants-list h2 {
-    font-size: 36px; /* Reduce the title size */
+  .headliner-slide-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center the items */
   }
 
-  .participant {
-    width: 100px; /* Reduce logo size on smaller screens */
+  .headliner-slide {
+    width: 80%;
+    margin: 20px 0;
   }
 
-  .participants-container {
-    gap: 20px; /* Reduce gap between logos on small screens */
+  .headliner-slide img {
+    width: 200px;
+  }
+
+  .headliner-slide h3 {
+    font-size: 30px;
+  }
+
+  .band-description,
+  .cool-story {
+    font-size: 14px;
   }
 }
 
@@ -250,6 +314,168 @@ nav ul li a:hover {
   background-color: #f0e68c; /* Lighter gold on hover */
 }
 
+/* Previous Years Section */
+.previous-years {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Black background with 80% transparency */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.previous-years h2 {
+  font-family: "UnifrakturMaguntia", cursive; /* Gothic font for title */
+  font-size: 36px;
+  color: gold; /* Gothic-style gold text */
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+/* Flexbox or Grid for responsive layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 15px; /* Space between images */
+  padding: 0 50px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* Zoom effect on hover */
+  opacity: 0.9;
+}
+
+/* Caption on hover */
+.gallery-item .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.gallery-item:hover .caption {
+  opacity: 1; /* Caption fades in on hover */
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery-item {
+  animation: fadeIn 1s ease-in-out both;
+  animation-delay: calc(0.1s * var(--delay));
+}
+
+/* Sponsors & Media Section */
+.sponsors-media-section {
+  background-color: rgba(0, 0, 0, 0.9); /* Dark Gothic background */
+  color: gold;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
+}
+
+.sponsors-media-section h2 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.sponsors-media-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sponsor-info,
+.media-info {
+  background: rgba(0, 0, 0, 0.8); /* Slightly darker background for each card */
+  padding: 20px;
+  border-radius: 15px;
+  width: 45%;
+  max-width: 500px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.sponsor-info h3,
+.media-info h3 {
+  font-size: 36px;
+  color: gold;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for Gothic effect */
+}
+
+.sponsor-description,
+.media-description,
+.sponsor-details,
+.media-details {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Garamond", serif; /* Elegant font */
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.sponsor-description strong,
+.media-description strong {
+  color: gold;
+}
+
+.contact-link {
+  display: inline-block;
+  font-size: 18px;
+  color: gold;
+  text-decoration: none;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 2px solid gold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+  background-color: gold;
+  color: black;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -305,5 +531,25 @@ footer {
 
   footer {
     padding: 15px;
+  }
+
+  .sponsors-media-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sponsor-info,
+  .media-info {
+    width: 80%;
+  }
+
+  .sponsor-info h3,
+  .media-info h3 {
+    font-size: 28px;
+  }
+
+  .sponsor-description,
+  .media-description {
+    font-size: 14px;
   }
 }

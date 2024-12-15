@@ -34,13 +34,17 @@ header {
 .logo h1 {
   font-family: "UnifrakturMaguntia", cursive; /* Gothic font for logo */
   color: #d4af37;
-  font-size: 2.5rem;
+  font-size: 52px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 50px;
 }
 
 nav ul {
   display: flex;
   gap: 20px;
   list-style-type: none;
+  margin-right: 50px;
 }
 
 nav ul li a {
@@ -56,6 +60,7 @@ nav ul li a:hover {
   color: #ff6347;
   transform: scale(1.1);
 }
+
 /* General article content layout */
 .article-content {
   max-width: 900px;
@@ -194,5 +199,25 @@ footer {
 
   footer {
     padding: 15px;
+  }
+
+  .sponsors-media-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sponsor-info,
+  .media-info {
+    width: 80%;
+  }
+
+  .sponsor-info h3,
+  .media-info h3 {
+    font-size: 28px;
+  }
+
+  .sponsor-description,
+  .media-description {
+    font-size: 14px;
   }
 }
