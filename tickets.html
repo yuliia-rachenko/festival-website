@@ -3,36 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Festival 2024 | Tickets</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/tickets.css" />
+    <title>Tons Of Rock Fest 2025</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <h1>Tickets</h1>
+      <div class="logo">
+        <h1>TONS OF ROCK 2025</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section class="ticket-options">
-      <article class="ticket">
-        <h2>Day Pass</h2>
-        <p>Price: $50</p>
-        <p>Access to all events on a single day.</p>
-      </article>
+    <section class="buy-tickets-page">
+      <h2>Buy Tickets</h2>
 
-      <article class="ticket">
-        <h2>Weekend Pass</h2>
-        <p>Price: $120</p>
-        <p>Access to all events for the entire weekend.</p>
-      </article>
+      <!-- Ticket Selection -->
+      <div class="ticket-selection">
+        <h3>Select Your Tickets</h3>
+        <div class="ticket-option">
+          <input
+            type="radio"
+            id="general-admission"
+            name="ticket"
+            value="General Admission"
+          />
+          <label for="general-admission"> General Admission - $99 </label>
+        </div>
+        <div class="ticket-option">
+          <input type="radio" id="vip-pass" name="ticket" value="VIP Pass" />
+          <label for="vip-pass"> VIP Pass - $199 </label>
+        </div>
+        <div class="ticket-option">
+          <input
+            type="radio"
+            id="three-day-pass"
+            name="ticket"
+            value="3-Day Pass"
+          />
+          <label for="three-day-pass"> 3-Day Pass - $249 </label>
+        </div>
+      </div>
 
-      <article class="ticket">
-        <h2>VIP Pass</h2>
-        <p>Price: $200</p>
-        <p>Premium access, including VIP seating and backstage passes.</p>
-      </article>
+      <!-- Personal Information Form -->
+      <div class="personal-info-form">
+        <h3>Your Information</h3>
+        <form>
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="full-name" required />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </form>
+      </div>
+
+      <!-- Payment Options -->
+      <div class="payment-method">
+        <h3>Choose Payment Method</h3>
+        <div class="payment-option">
+          <input
+            type="radio"
+            id="credit-card"
+            name="payment"
+            value="Credit Card"
+          />
+          <label for="credit-card">Credit/Debit Card</label>
+        </div>
+        <div class="payment-option">
+          <input type="radio" id="paypal" name="payment" value="PayPal" />
+          <label for="paypal">PayPal</label>
+        </div>
+        <div class="payment-option">
+          <input type="radio" id="apple-pay" name="payment" value="Apple Pay" />
+          <label for="apple-pay">Apple Pay</label>
+        </div>
+      </div>
+
+      <!-- Order Summary and Confirm Button -->
+      <div class="order-summary">
+        <h3>Order Summary</h3>
+        <p>
+          Selected Ticket: <span id="selected-ticket">General Admission</span>
+        </p>
+        <p>Total Price: <span id="total-price">$99</span></p>
+
+        <button type="button" class="confirm-purchase-btn">
+          Confirm Purchase
+        </button>
+      </div>
     </section>
 
     <footer>
-      <p>&copy; 2024 Festival. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2025 Tons Of Rock Fest. All Rights Reserved.</p>
     </footer>
   </body>
 </html>

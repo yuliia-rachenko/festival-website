@@ -34,17 +34,13 @@ header {
 .logo h1 {
   font-family: "UnifrakturMaguntia", cursive; /* Gothic font for logo */
   color: #d4af37;
-  font-size: 52px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-left: 50px;
+  font-size: 2.5rem;
 }
 
 nav ul {
   display: flex;
   gap: 20px;
   list-style-type: none;
-  margin-right: 50px;
 }
 
 nav ul li a {
@@ -60,109 +56,87 @@ nav ul li a:hover {
   color: #ff6347;
   transform: scale(1.1);
 }
-
-/* Program page styling */
-.program-page {
-  background: url("background-program.jpg") no-repeat center center fixed;
-  background-size: cover;
+/* General article content layout */
+.article-content {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Slightly transparent black background */
   color: white;
-  padding: 50px 20px;
+  border-radius: 10px;
+  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
+  line-height: 1.7;
+}
+
+/* Spacing between header and article title */
+.article-content h1 {
+  color: #d4af37; /* Gold color for the title */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-.program-page h2 {
-  font-family: "UnifrakturMaguntia", cursive;
-  font-size: 48px;
-  color: #ffd700; /* Gold title */
-  margin-top: 100px;
-  margin-bottom: 40px;
-}
-
-/* Styling each day */
-.program-day {
-  margin-bottom: 60px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
-  border-radius: 10px;
-}
-
-.program-day h3 {
-  font-size: 36px;
-  color: #ffd700; /* Gold color for day title */
-  margin-bottom: 20px;
-}
-
-.headliner {
+/* Meta info under the title (author, date) */
+.article-meta {
+  text-align: center;
+  font-size: 1.1rem;
   margin-bottom: 30px;
+  color: #d4af37; /* Gold color for meta info */
 }
 
-.headliner h4 {
-  font-size: 30px;
-  font-family: "UnifrakturMaguntia", cursive;
-  color: #ffd700;
+.article-meta .author,
+.article-meta .date {
+  display: block;
+  margin: 5px 0;
 }
 
-.headliner img {
-  width: 150px;
-  height: auto;
-  margin-top: 10px;
+/* Main image styling */
+.article-content img {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+/* Images within the article (chess order layout) */
+.article-image-left,
+.article-image-right {
+  max-width: 45%;
+  margin: 20px 0;
+}
+
+.article-image-left img,
+.article-image-right img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.article-image-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.article-image-right {
+  float: right;
+  margin-left: 20px;
+}
+
+/* Ensure text wraps around the images properly */
+.article-content p {
+  font-size: 1.2rem;
+  text-align: justify;
   margin-bottom: 20px;
 }
 
-.lineup {
-  list-style-type: none;
-  padding: 0;
-}
-
-.lineup li {
-  font-size: 22px;
-  margin: 10px 0;
-}
-
-/* Buy Tickets Button */
-.buy-tickets {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.buy-tickets-btn {
-  font-size: 24px;
-  font-family: "UnifrakturMaguntia", cursive;
-  background-color: #ffd700;
-  color: black;
-  padding: 15px 30px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.buy-tickets-btn:hover {
-  background-color: #ffbf00;
-  color: white;
-}
-
-/* Responsive styling */
-@media (max-width: 768px) {
-  .program-page h2 {
-    font-size: 36px;
-  }
-
-  .program-day h3 {
-    font-size: 28px;
-  }
-
-  .headliner h4 {
-    font-size: 24px;
-  }
-
-  .lineup li {
-    font-size: 18px;
-  }
-
-  .buy-tickets-btn {
-    font-size: 20px;
-    padding: 10px 20px;
-  }
+/* Clear floats after the article text */
+.article-content::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Footer */

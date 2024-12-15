@@ -1,32 +1,238 @@
-body {
-  font-family: "Arial", sans-serif;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  text-align: center;
-  background-color: #222;
+body,
+html {
+  font-family: "Garamond", serif; /* Gothic vibe */
   color: white;
-  padding: 20px;
+  background-color: black;
+  background: url("../images/festival-background.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-.ticket-options {
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-.ticket {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+.logo h1 {
+  font-family: "UnifrakturMaguntia", cursive; /* Gothic font for logo */
+  color: #d4af37;
+  font-size: 52px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 50px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+nav ul li a {
+  font-family: "UnifrakturMaguntia", cursive;
+  color: #d4af37;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 10px 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6347;
+  transform: scale(1.1);
+}
+
+/* General Styling for the Buy Tickets Page */
+.buy-tickets-page {
+  background: url("tickets-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.buy-tickets-page h2 {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-size: 48px;
+  color: #ffd700; /* Gold for Title */
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.personal-info-form {
+  margin-bottom: 40px;
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent Background */
+  border-radius: 10px;
+  max-width: 600px; /* Set a max-width for the entire form container */
+  margin: 0 auto; /* Center the form container */
+}
+
+.personal-info-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align the input fields in the center */
+}
+
+.personal-info-form label {
+  width: 100%;
+  font-family: "UnifrakturMaguntia", cursive;
+  color: #ffd700;
+  margin-bottom: 10px;
+  text-align: left; /* Align labels to the left */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%; /* Full width within container */
+  max-width: 400px; /* Limit the input field width */
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.ticket-selection,
+.payment-method,
+.order-summary {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent Background */
+  border-radius: 10px;
+}
+
+.ticket-selection h3,
+.payment-method h3,
+.order-summary h3 {
+  font-size: 36px;
+  color: #ffd700;
   margin-bottom: 20px;
 }
 
-.ticket h2 {
-  color: #ff6347;
+.ticket-option,
+.payment-option {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+label {
+  font-family: "UnifrakturMaguntia", cursive;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.confirm-purchase-btn {
+  font-size: 24px;
+  font-family: "UnifrakturMaguntia", cursive;
+  background-color: #ffd700;
+  color: black;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.confirm-purchase-btn:hover {
+  background-color: #ffbf00;
+  color: white;
 }
 
 footer {
-  background-color: #222;
-  color: white;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff6347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .latest-news {
+    padding: 30px;
+  }
+
+  .news-item {
+    width: 95%;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  .buy-tickets-page h2 {
+    font-size: 36px;
+  }
+
+  .ticket-option,
+  .payment-option {
+    font-size: 18px;
+  }
+
+  .confirm-purchase-btn {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
 }
