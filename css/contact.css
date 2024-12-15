@@ -17,38 +17,37 @@ html {
   overflow-x: hidden;
 }
 
-/* Header Styles */
+/* General Header Styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 50px;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
+  transition: all 0.3s ease;
 }
 
-.logo h1 {
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font for logo */
-  color: #d4af37;
-  font-size: 52px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-left: 50px;
+/* Logo Styles */
+.logo img {
+  height: auto;
 }
 
+/* Navigation Styles */
 nav ul {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   list-style-type: none;
-  margin-right: 50px;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
-  font-family: "UnifrakturMaguntia", cursive;
+  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
   color: #d4af37;
   text-decoration: none;
   font-size: 1.4rem;
@@ -217,12 +216,26 @@ footer {
   color: #ff6347;
 }
 
-/* Responsive Design */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  nav ul {
+  /* Adjust for tablets */
+  header {
     flex-direction: column;
-    gap: 10px;
+    padding: 10px 20px;
   }
+
+  .logo img {
+    width: 120px; /* Smaller logo for tablets */
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
 
   .hero h1 {
     font-size: 2.5rem;
@@ -248,22 +261,54 @@ footer {
     padding: 15px;
   }
 
-  .organizers {
+  .sponsors-media-container {
     flex-direction: column;
+    align-items: center;
   }
 
-  .organizer-item {
-    flex-basis: 100%;
+  .sponsor-info,
+  .media-info {
+    width: 80%;
   }
 
-  .map-container iframe {
-    height: 300px;
-  }
-  .organizer-grid {
-    grid-template-columns: 1fr;
+  .sponsor-info h3,
+  .media-info h3 {
+    font-size: 28px;
   }
 
-  .map-container iframe {
-    height: 300px;
+  .sponsor-description,
+  .media-description {
+    font-size: 14px;
   }
+}
+
+@media (max-width: 480px) {
+  /* Adjust for mobile phones */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .logo img {
+    width: 100px; /* Even smaller logo for mobile */
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    text-align: left;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+    padding: 8px 0;
+    display: block;
+  }
+}
 }

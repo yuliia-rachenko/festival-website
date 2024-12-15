@@ -17,38 +17,37 @@ html {
   overflow-x: hidden;
 }
 
-/* Header Styles */
+/* General Header Styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 50px;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
+  transition: all 0.3s ease;
 }
 
-.logo h1 {
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font for logo */
-  color: #d4af37;
-  font-size: 52px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-left: 50px;
+/* Logo Styles */
+.logo img {
+  height: auto;
 }
 
+/* Navigation Styles */
 nav ul {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   list-style-type: none;
-  margin-right: 50px;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
-  font-family: "UnifrakturMaguntia", cursive;
+  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
   color: #d4af37;
   text-decoration: none;
   font-size: 1.4rem;
@@ -60,7 +59,6 @@ nav ul li a:hover {
   color: #ff6347;
   transform: scale(1.1);
 }
-
 /* General article content layout */
 .article-content {
   max-width: 900px;
@@ -74,12 +72,13 @@ nav ul li a:hover {
   ); /* Slightly transparent black background */
   color: white;
   border-radius: 10px;
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
+  font-family: "Garamond", serif; /* Use Garamond for better readability */
   line-height: 1.7;
 }
 
 /* Spacing between header and article title */
 .article-content h1 {
+  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
   color: #d4af37; /* Gold color for the title */
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -170,12 +169,26 @@ footer {
   color: #ff6347;
 }
 
-/* Responsive Design */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  nav ul {
+  /* Adjust for tablets */
+  header {
     flex-direction: column;
-    gap: 10px;
+    padding: 10px 20px;
   }
+
+  .logo img {
+    width: 120px; /* Smaller logo for tablets */
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
 
   .hero h1 {
     font-size: 2.5rem;
@@ -220,4 +233,35 @@ footer {
   .media-description {
     font-size: 14px;
   }
+}
+
+@media (max-width: 480px) {
+  /* Adjust for mobile phones */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .logo img {
+    width: 100px; /* Even smaller logo for mobile */
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    text-align: left;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+    padding: 8px 0;
+    display: block;
+  }
+}
 }

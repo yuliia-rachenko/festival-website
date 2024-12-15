@@ -17,38 +17,37 @@ html {
   overflow-x: hidden;
 }
 
-/* Header Styles */
+/* General Header Styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 50px;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
+  transition: all 0.3s ease;
 }
 
-.logo h1 {
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font for logo */
-  color: #d4af37;
-  font-size: 52px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-left: 50px;
+/* Logo Styles */
+.logo img {
+  height: auto;
 }
 
+/* Navigation Styles */
 nav ul {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   list-style-type: none;
-  margin-right: 50px;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
-  font-family: "UnifrakturMaguntia", cursive;
+  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
   color: #d4af37;
   text-decoration: none;
   font-size: 1.4rem;
@@ -63,26 +62,25 @@ nav ul li a:hover {
 
 /* Program Section Styles */
 .program-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
   padding: 50px 20px;
-  background-color: #1a1a1a; /* Dark background for the program section */
+  background-color: #1a1a1a;
   color: #fff;
   font-family: "UnifrakturMaguntia", cursive;
+  margin-top: 50px;
 }
 
 .program-day {
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Limit width for large screens */
   margin-bottom: 40px;
-  background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.program-day h3 {
-  font-size: 36px;
-  color: gold;
-  text-align: center;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  text-align: center; /* Center text within each program day */
 }
 
 .headliner {
@@ -98,11 +96,14 @@ nav ul li a:hover {
 .headliner img {
   max-width: 300px;
   border-radius: 10px;
+  display: block;
+  margin: 0 auto; /* Center image */
 }
 
 .lineup {
   list-style-type: none;
   padding-left: 0;
+  text-align: center; /* Center the lineup items */
 }
 
 .lineup li {
@@ -115,6 +116,7 @@ nav ul li a:hover {
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 20px;
+  text-align: center; /* Center the description text */
 }
 
 .buy-tickets-btn {
@@ -127,6 +129,8 @@ nav ul li a:hover {
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
+  text-align: center;
+  margin: 0 auto; /* Center the button */
 }
 
 .buy-tickets-btn:hover {
@@ -159,12 +163,26 @@ footer {
   color: #ff6347;
 }
 
-/* Responsive Design */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  nav ul {
+  /* Adjust for tablets */
+  header {
     flex-direction: column;
-    gap: 10px;
+    padding: 10px 20px;
   }
+
+  .logo img {
+    width: 120px; /* Smaller logo for tablets */
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
 
   .hero h1 {
     font-size: 2.5rem;
@@ -189,4 +207,55 @@ footer {
   footer {
     padding: 15px;
   }
+
+  .sponsors-media-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sponsor-info,
+  .media-info {
+    width: 80%;
+  }
+
+  .sponsor-info h3,
+  .media-info h3 {
+    font-size: 28px;
+  }
+
+  .sponsor-description,
+  .media-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust for mobile phones */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .logo img {
+    width: 100px; /* Even smaller logo for mobile */
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    text-align: left;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+    padding: 8px 0;
+    display: block;
+  }
+}
 }
