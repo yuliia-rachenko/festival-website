@@ -7,7 +7,7 @@
 
 body,
 html {
-  font-family: "Garamond", serif; /* Gothic vibe */
+  font-family: "Garamond", serif;
   color: white;
   background-color: black;
   background: url("../images/festival-background.jpg") no-repeat center center
@@ -47,7 +47,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
+  font-family: "UnifrakturMaguntia", cursive;
   color: #d4af37;
   text-decoration: none;
   font-size: 1.4rem;
@@ -64,7 +64,7 @@ nav ul li a:hover {
 .program-page {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
+  align-items: center;
   padding: 50px 20px;
   background-color: #1a1a1a;
   color: #fff;
@@ -73,14 +73,14 @@ nav ul li a:hover {
 }
 
 .program-day {
-  width: 100%; /* Full width */
-  max-width: 1200px; /* Limit width for large screens */
+  width: 100%;
+  max-width: 1200px;
   margin-bottom: 40px;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  text-align: center; /* Center text within each program day */
+  text-align: center;
 }
 
 .headliner {
@@ -97,13 +97,13 @@ nav ul li a:hover {
   max-width: 300px;
   border-radius: 10px;
   display: block;
-  margin: 0 auto; /* Center image */
+  margin: 0 auto;
 }
 
 .lineup {
   list-style-type: none;
   padding-left: 0;
-  text-align: center; /* Center the lineup items */
+  text-align: center;
 }
 
 .lineup li {
@@ -116,7 +116,7 @@ nav ul li a:hover {
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 20px;
-  text-align: center; /* Center the description text */
+  text-align: center;
 }
 
 .buy-tickets-btn {
@@ -130,7 +130,7 @@ nav ul li a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
   text-align: center;
-  margin: 0 auto; /* Center the button */
+  margin: 0 auto;
 }
 
 .buy-tickets-btn:hover {
@@ -172,60 +172,19 @@ footer {
   }
 
   .logo img {
-    width: 120px; /* Smaller logo for tablets */
+    width: 120px;
   }
 
   nav ul {
     gap: 20px;
   }
-  
+
   nav ul li a {
     font-size: 1.2rem;
   }
 
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .latest-news {
-    padding: 30px;
-  }
-
-  .news-item {
-    width: 95%;
-  }
-
   footer {
     padding: 15px;
-  }
-
-  .sponsors-media-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sponsor-info,
-  .media-info {
-    width: 80%;
-  }
-
-  .sponsor-info h3,
-  .media-info h3 {
-    font-size: 28px;
-  }
-
-  .sponsor-description,
-  .media-description {
-    font-size: 14px;
   }
 }
 
@@ -257,5 +216,4 @@ footer {
     padding: 8px 0;
     display: block;
   }
-}
 }

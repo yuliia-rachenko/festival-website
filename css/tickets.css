@@ -7,7 +7,7 @@
 
 body,
 html {
-  font-family: "Garamond", serif; /* Gothic vibe */
+  font-family: "Garamond", serif;
   color: white;
   background-color: black;
   background: url("../images/festival-background.jpg") no-repeat center center
@@ -47,7 +47,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
+  font-family: "UnifrakturMaguntia", cursive;
   color: #d4af37;
   text-decoration: none;
   font-size: 1.4rem;
@@ -80,16 +80,16 @@ nav ul li a:hover {
 .personal-info-form {
   margin-bottom: 40px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7); /* Transparent Background */
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
-  max-width: 600px; /* Set a max-width for the entire form container */
-  margin: 0 auto; /* Center the form container */
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .personal-info-form form {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Align the input fields in the center */
+  align-items: center;
 }
 
 .personal-info-form label {
@@ -97,14 +97,14 @@ nav ul li a:hover {
   font-family: "UnifrakturMaguntia", cursive;
   color: #ffd700;
   margin-bottom: 10px;
-  text-align: left; /* Align labels to the left */
+  text-align: left;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
-  width: 100%; /* Full width within container */
-  max-width: 400px; /* Limit the input field width */
+  width: 100%;
+  max-width: 400px;
   padding: 10px;
   margin: 10px 0;
   border: none;
@@ -117,7 +117,7 @@ input[type="tel"] {
 .order-summary {
   margin-bottom: 40px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7); /* Transparent Background */
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
 }
 
@@ -199,60 +199,15 @@ footer {
   }
 
   .logo img {
-    width: 120px; /* Smaller logo for tablets */
+    width: 120px;
   }
 
   nav ul {
     gap: 20px;
   }
-  
+
   nav ul li a {
     font-size: 1.2rem;
-  }
-
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .latest-news {
-    padding: 30px;
-  }
-
-  .news-item {
-    width: 95%;
-  }
-
-  footer {
-    padding: 15px;
-  }
-
-  .sponsors-media-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sponsor-info,
-  .media-info {
-    width: 80%;
-  }
-
-  .sponsor-info h3,
-  .media-info h3 {
-    font-size: 28px;
-  }
-
-  .sponsor-description,
-  .media-description {
-    font-size: 14px;
   }
 }
 
@@ -284,5 +239,4 @@ footer {
     padding: 8px 0;
     display: block;
   }
-}
 }

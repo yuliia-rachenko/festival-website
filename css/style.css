@@ -7,7 +7,7 @@
 
 body,
 html {
-  font-family: "Garamond", serif; /* Gothic vibe */
+  font-family: "Garamond", serif;
   color: white;
   background-color: black;
   background: url("../images/festival-background.jpg") no-repeat center center
@@ -47,7 +47,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
+  font-family: "UnifrakturMaguntia", cursive;
   color: #d4af37;
   text-decoration: none;
   font-size: 1.4rem;
@@ -88,7 +88,7 @@ nav ul li a:hover {
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 10px;
-  font-family: "Garamond", serif; /* Gothic vibe */
+  font-family: "Garamond", serif;
   color: white;
 }
 
@@ -96,7 +96,7 @@ nav ul li a:hover {
   font-size: 1.5rem;
   margin-top: 10px;
   color: #ddd;
-  font-family: "Garamond", serif; /* Gothic vibe */
+  font-family: "Garamond", serif;
   color: white;
 }
 
@@ -106,7 +106,7 @@ nav ul li a:hover {
   text-transform: uppercase;
   color: white;
   background-color: transparent;
-  border: 2px solid white; /* Gold border */
+  border: 2px solid white;
   padding: 10px 20px;
   font-size: 1.5rem;
   letter-spacing: 1px;
@@ -116,15 +116,15 @@ nav ul li a:hover {
 }
 
 .hero-btn:hover {
-  background-color: #d4af37; /* Gold background on hover */
-  color: black; /* Text changes to black on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #d4af37;
+  color: black;
+  transform: scale(1.05);
 }
 
 /* Headliners Section */
 .headliners-section {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.9); /* Dark Gothic background */
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 60px 20px;
   text-align: center;
   color: gold;
@@ -132,7 +132,7 @@ nav ul li a:hover {
 
 /* Title Styling */
 .headliners-section h2 {
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font for title */
+  font-family: "UnifrakturMaguntia", cursive;
   font-size: 48px;
   color: gold;
   margin-bottom: 50px;
@@ -141,31 +141,31 @@ nav ul li a:hover {
 /* Flexbox Layout for Headliners */
 .headliner-slide-container {
   display: flex;
-  justify-content: center; /* Center the items horizontally */
-  gap: 40px; /* Space between items */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  max-width: 100%; /* Ensure container is full-width */
-  margin: 0 auto; /* Center the container */
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /* Individual Headliner Slide */
 .headliner-slide {
-  background: rgba(0, 0, 0, 0.8); /* Slight dark background */
+  background: rgba(0, 0, 0, 0.8);
   padding: 20px;
   border-radius: 15px;
-  box-sizing: border-box; /* Ensure padding doesn't break layout */
+  box-sizing: border-box;
   position: relative;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column;
   align-items: center;
-  max-width: 320px; /* Ensure a consistent width for cards */
+  max-width: 320px;
   width: 100%;
-  margin-bottom: 30px; /* Space between the rows on wrap */
+  margin-bottom: 30px;
 }
 
 /* Band Image */
 .headliner-slide img {
-  width: 250px; /* Adjust logo size */
+  width: 250px;
   height: auto;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -173,18 +173,18 @@ nav ul li a:hover {
 
 /* Band Name */
 .headliner-slide h3 {
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font for band name */
+  font-family: "UnifrakturMaguntia", cursive;
   font-size: 36px;
   color: gold;
   letter-spacing: 1.5px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for a Gothic effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   margin-bottom: 15px;
 }
 
 /* Band Information */
 .band-info {
-  color: rgba(255, 255, 255, 0.8); /* Slightly transparent text */
-  font-family: "Garamond", serif; /* Elegant, old-style font */
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Garamond", serif;
   text-align: center;
   padding: 0 20px;
 }
@@ -216,32 +216,6 @@ nav ul li a:hover {
   margin-top: 10px;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .headliner-slide-container {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center; /* Center the items */
-  }
-
-  .headliner-slide {
-    width: 80%;
-    margin: 20px 0;
-  }
-
-  .headliner-slide img {
-    width: 200px;
-  }
-
-  .headliner-slide h3 {
-    font-size: 30px;
-  }
-
-  .band-description,
-  .cool-story {
-    font-size: 14px;
-  }
-}
-
 /* Latest News Section */
 .latest-news {
   display: flex;
@@ -253,13 +227,13 @@ nav ul li a:hover {
 }
 
 .latest-news h2 {
-  font-family: "UnifrakturMaguntia", cursive; /* Keep Gothic font */
-  color: #d4af37; /* Gold color */
-  font-size: 2.5rem; /* Slightly reduce the size */
+  font-family: "UnifrakturMaguntia", cursive;
+  color: #d4af37;
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 40px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  letter-spacing: 2px; /* Reduce letter-spacing for readability */
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -269,7 +243,7 @@ nav ul li a:hover {
   align-items: center;
   margin: 20px 0;
   width: 80%;
-  background-color: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -284,17 +258,17 @@ nav ul li a:hover {
 }
 
 .news-content h3 {
-  font-family: "UnifrakturMaguntia", cursive; /* Keep Gothic font for headlines */
-  color: #d4af37; /* Gold text */
-  font-size: 1.6rem; /* Slightly reduce font size */
+  font-family: "UnifrakturMaguntia", cursive;
+  color: #d4af37;
+  font-size: 1.6rem;
   margin-bottom: 10px;
 }
 
 .news-content p {
-  font-family: "Garamond", serif; /* Use Garamond for better readability */
-  color: rgba(255, 255, 255, 0.9); /* Slightly lighter text */
+  font-family: "Garamond", serif;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1.1rem;
-  line-height: 1.6; /* Increase line height for better spacing */
+  line-height: 1.6;
 }
 
 .read-more-btn {
@@ -315,31 +289,23 @@ nav ul li a:hover {
 
 /* Gallery Section */
 .gallery-section {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.8
-  ); /* Black background with 80% transparency */
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 50px 0;
   text-align: center;
 }
 
 .gallery-section h2 {
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font for title */
+  font-family: "UnifrakturMaguntia", cursive;
   font-size: 36px;
-  color: gold; /* Gothic-style gold text */
+  color: gold;
   margin-bottom: 40px;
   letter-spacing: 2px;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(300px, 1fr)
-  ); /* Responsive grid */
-  gap: 15px; /* Space between images */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
   padding: 0 50px;
 }
 
@@ -357,7 +323,7 @@ nav ul li a:hover {
 }
 
 .gallery-item:hover img {
-  transform: scale(1.1); /* Zoom effect on hover */
+  transform: scale(1.1);
   opacity: 0.9;
 }
 
@@ -370,14 +336,14 @@ nav ul li a:hover {
   padding: 10px;
   color: white;
   font-size: 14px;
-  background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  background: rgba(0, 0, 0, 0.7);
   text-align: center;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
 
 .gallery-item:hover .caption {
-  opacity: 1; /* Caption fades in on hover */
+  opacity: 1;
 }
 
 /* Animation */
@@ -399,11 +365,11 @@ nav ul li a:hover {
 
 /* Sponsors & Media Section */
 .sponsors-media-section {
-  background-color: rgba(0, 0, 0, 0.9); /* Dark Gothic background */
+  background-color: rgba(0, 0, 0, 0.9);
   color: gold;
   padding: 60px 20px;
   text-align: center;
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
+  font-family: "UnifrakturMaguntia", cursive;
 }
 
 .sponsors-media-section h2 {
@@ -423,7 +389,7 @@ nav ul li a:hover {
 
 .sponsor-info,
 .media-info {
-  background: rgba(0, 0, 0, 0.8); /* Slightly darker background for each card */
+  background: rgba(0, 0, 0, 0.8);
   padding: 20px;
   border-radius: 15px;
   width: 45%;
@@ -438,7 +404,7 @@ nav ul li a:hover {
   color: gold;
   margin-bottom: 20px;
   letter-spacing: 1.5px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for Gothic effect */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .sponsor-description,
@@ -446,7 +412,7 @@ nav ul li a:hover {
 .sponsor-details,
 .media-details {
   color: rgba(255, 255, 255, 0.8);
-  font-family: "Garamond", serif; /* Elegant font */
+  font-family: "Garamond", serif;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 15px;
@@ -509,17 +475,16 @@ footer {
   }
 
   .logo img {
-    width: 120px; /* Smaller logo for tablets */
+    width: 120px;
   }
 
   nav ul {
     gap: 20px;
   }
-  
+
   nav ul li a {
     font-size: 1.2rem;
   }
-
 
   .hero h1 {
     font-size: 2.5rem;
@@ -531,6 +496,37 @@ footer {
 
   .hero p {
     font-size: 1rem;
+  }
+
+  .headliner-slide-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headliner-slide {
+    max-width: 100%;
+  }
+
+  .headliner-slide img {
+    width: 200px;
+  }
+
+  .headliner-slide h3 {
+    font-size: 28px;
+  }
+
+  .band-info strong {
+    font-size: 16px;
+  }
+
+  .band-description,
+  .cool-story {
+    font-size: 14px;
+  }
+
+  .hero-btn {
+    font-size: 1.2rem;
+    padding: 8px 16px;
   }
 
   .latest-news {
@@ -575,7 +571,7 @@ footer {
   }
 
   .logo img {
-    width: 100px; /* Even smaller logo for mobile */
+    width: 100px;
   }
 
   nav ul {
@@ -594,6 +590,21 @@ footer {
     padding: 8px 0;
     display: block;
   }
-}
+  .headliner-slide img {
+    width: 150px;
+  }
 
+  .headliner-slide h3 {
+    font-size: 24px;
+  }
+
+  .band-description,
+  .cool-story {
+    font-size: 12px;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
 }

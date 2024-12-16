@@ -7,7 +7,7 @@
 
 body,
 html {
-  font-family: "Garamond", serif; /* Gothic vibe */
+  font-family: "Garamond", serif;
   color: white;
   background-color: black;
   background: url("../images/festival-background.jpg") no-repeat center center
@@ -47,7 +47,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
+  font-family: "UnifrakturMaguntia", cursive;
   color: #d4af37;
   text-decoration: none;
   font-size: 1.4rem;
@@ -64,33 +64,26 @@ nav ul li a:hover {
   max-width: 900px;
   margin: 80px auto;
   padding: 20px;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Slightly transparent black background */
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   border-radius: 10px;
-  font-family: "Garamond", serif; /* Use Garamond for better readability */
+  font-family: "Garamond", serif;
   line-height: 1.7;
 }
 
-/* Spacing between header and article title */
 .article-content h1 {
-  font-family: "UnifrakturMaguntia", cursive; /* Gothic font */
-  color: #d4af37; /* Gold color for the title */
+  font-family: "UnifrakturMaguntia", cursive;
+  color: #d4af37;
   font-size: 2.5rem;
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* Meta info under the title (author, date) */
 .article-meta {
   text-align: center;
   font-size: 1.1rem;
   margin-bottom: 30px;
-  color: #d4af37; /* Gold color for meta info */
+  color: #d4af37;
 }
 
 .article-meta .author,
@@ -99,14 +92,12 @@ nav ul li a:hover {
   margin: 5px 0;
 }
 
-/* Main image styling */
 .article-content img {
   width: 100%;
   margin-bottom: 30px;
   border-radius: 8px;
 }
 
-/* Images within the article (chess order layout) */
 .article-image-left,
 .article-image-right {
   max-width: 45%;
@@ -129,14 +120,12 @@ nav ul li a:hover {
   margin-left: 20px;
 }
 
-/* Ensure text wraps around the images properly */
 .article-content p {
   font-size: 1.2rem;
   text-align: justify;
   margin-bottom: 20px;
 }
 
-/* Clear floats after the article text */
 .article-content::after {
   content: "";
   display: table;
@@ -171,67 +160,25 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-  /* Adjust for tablets */
   header {
     flex-direction: column;
     padding: 10px 20px;
   }
 
   .logo img {
-    width: 120px; /* Smaller logo for tablets */
+    width: 120px;
   }
 
   nav ul {
     gap: 20px;
   }
-  
+
   nav ul li a {
     font-size: 1.2rem;
   }
 
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .latest-news {
-    padding: 30px;
-  }
-
-  .news-item {
-    width: 95%;
-  }
-
   footer {
     padding: 15px;
-  }
-
-  .sponsors-media-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sponsor-info,
-  .media-info {
-    width: 80%;
-  }
-
-  .sponsor-info h3,
-  .media-info h3 {
-    font-size: 28px;
-  }
-
-  .sponsor-description,
-  .media-description {
-    font-size: 14px;
   }
 }
 
@@ -244,7 +191,7 @@ footer {
   }
 
   .logo img {
-    width: 100px; /* Even smaller logo for mobile */
+    width: 100px;
   }
 
   nav ul {
@@ -263,5 +210,4 @@ footer {
     padding: 8px 0;
     display: block;
   }
-}
 }
