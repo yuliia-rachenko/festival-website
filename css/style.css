@@ -313,8 +313,8 @@ nav ul li a:hover {
   background-color: #f0e68c;
 }
 
-/* Previous Years Section */
-.previous-years {
+/* Gallery Section */
+.gallery-section {
   background-color: rgba(
     0,
     0,
@@ -325,7 +325,7 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.previous-years h2 {
+.gallery-section h2 {
   font-family: "UnifrakturMaguntia", cursive; /* Gothic font for title */
   font-size: 36px;
   color: gold; /* Gothic-style gold text */
@@ -333,7 +333,6 @@ nav ul li a:hover {
   letter-spacing: 2px;
 }
 
-/* Flexbox or Grid for responsive layout */
 .gallery {
   display: grid;
   grid-template-columns: repeat(
